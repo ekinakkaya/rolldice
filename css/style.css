@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+html,
+body,
+div,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    margin: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-size: 2.5em;
+}
+
+.container p {
+    font-size: 1.2em;
+}
+
+.dice {
+    width: 120px;
+    height: 120px;
+    background-color: #fe0321;
+    margin: 2em;
+    border-radius: 5%;
+    /* transition: all 0.3s; */
+    transition: all 0.3s;
+}
+
+.dice p {
+    font-size: 2em;
+    color: white;
+}
+
+.container__dot {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container__dot div {
+    margin: 0 15px 0;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.container__dot div.hidden {
+    display: none;
+}
+
+.rollbutton {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 5px;
+    padding-top: 7px;
+    border: 2px solid black;
+    width: 4em;
+    transition: all 0.3s;
+    display: none;
+}
+
+.rollbutton:hover {
+    border-bottom: 2px solid red;
+    /*margin-top: 20px;*/
+    color: white;
+    background-color: black;
+    /*padding: 17px 5px 15px;*/
+}
